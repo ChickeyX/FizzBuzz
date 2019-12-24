@@ -1,7 +1,7 @@
 for x in range(1, 101):
-    string = ''
+    response = ''
     if x % 3 == 0:
-        string += 'Fizz'
+        response += 'Fizz'
     if x % 5 == 0:
-        string += 'Buzz'
-    print(x if not string else string)
+        response += 'Buzz'
+    print(response or x)
